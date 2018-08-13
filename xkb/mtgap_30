@@ -1,0 +1,59 @@
+default
+xkb_symbols "basic" {
+
+    name[Group1]= "MTGAP (30 keys)";
+
+    key <TLDE> {[   grave,	    asciitilde	    ]};
+    key <AE01> {[	1,	        exclam 		    ]};
+    key <AE02> {[	2,	        at		        ]};
+    key <AE03> {[	3,	        numbersign	    ]};
+    key <AE04> {[	4,	        dollar		    ]};
+    key <AE05> {[	5,	        percent		    ]};
+    key <AE06> {[	6,	        asciicircum	    ]};
+    key <AE07> {[	7,	        ampersand	    ]};
+    key <AE08> {[	8,	        asterisk	    ]};
+    key <AE09> {[	9,	        parenleft	    ]};
+    key <AE10> {[	0,	        parenright	    ]};
+    key <AE11> {[   minus,	    underscore	    ]};
+    key <AE12> {[   equal,	    plus		    ]};
+
+    key <AD01> {[	y,	        Y 		        ]};
+    key <AD02> {[	p,	        P		        ]};
+    key <AD03> {[	o,	        O		        ]};
+    key <AD04> {[	u,	        U		        ]};
+    key <AD05> {[	j,	        J		        ]};
+    key <AD06> {[	k,	        K		        ]};
+    key <AD07> {[	d,	        D		        ]};
+    key <AD08> {[	l,	        L		        ]};
+    key <AD09> {[	c,	        C		        ]};
+    key <AD10> {[	w,	        W		        ]};
+    key <AD11> {[   bracketleft,	braceleft	]};
+    key <AD12> {[   bracketright,	braceright	]};
+
+    key <AC01> {[	i,	        I               ]};
+    key <AC02> {[	n,	        N               ]};
+    key <AC03> {[	e,	        E               ]};
+    key <AC04> {[	a,	        A               ]};
+    key <AC05> {[	comma,	    semicolon	    ]};
+    key <AC06> {[	m,	        M		        ]};
+    key <AC07> {[	h,	        H		        ]};
+    key <AC08> {[	t,	        T		        ]};
+    key <AC09> {[	s,	        S		        ]};
+    key <AC10> {[   r,	        R		        ]};
+    key <AC11> {[   apostrophe,	quotedbl	    ]};
+
+    key <AB01> {[	q,	        Q 		        ]};
+    key <AB02> {[	z,	        Z		        ]};
+    key <AB03> {[	slash,	    less		    ]};
+    key <AB04> {[	period,	    greater		    ]};
+    key <AB05> {[	colon,	    question	    ]};
+    key <AB06> {[	b,	        B		        ]};
+    key <AB07> {[	f,	        F		        ]};
+    key <AB08> {[   g,	        G		        ]};
+    key <AB09> {[   v,	        V		        ]};
+    key <AB10> {[   x,	        X   	        ]};
+
+    key <BKSL> {[   backslash,  bar	            ]};
+    key <CAPS> {[   BackSpace,  BackSpace,  BackSpace,  BackSpace ]};
+};
+
