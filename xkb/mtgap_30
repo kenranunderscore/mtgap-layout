@@ -8,41 +8,42 @@ xkb_symbols "basic" {
 
     include "us(basic)"
 
-    name[Group1] = "MTGAP (30 keys)";
+    name[Group1] = "MTGAP 30";
 
-    key <AD01> {[	y,	        Y 		    ]};
-    key <AD02> {[	p,	        P		      ]};
-    key <AD03> {[	o,	        O         ]};
-    key <AD04> {[	u,	        U         ]};
-    key <AD05> {[	j,	        J		      ]};
-    key <AD06> {[	k,	        K		      ]};
-    key <AD07> {[	d,	        D		      ]};
-    key <AD08> {[	l,	        L		      ]};
-    key <AD09> {[	c,	        C         ]};
-    key <AD10> {[	w,	        W         ]};
+    key <AD01> {[ y,         Y         ]};
+    key <AD02> {[ p,         P         ]};
+    key <AD03> {[ o,         O         ]};
+    key <AD04> {[ u,         U         ]};
+    key <AD05> {[ j,         J         ]};
+    key <AD06> {[ k,         K         ]};
+    key <AD07> {[ d,         D         ]};
+    key <AD08> {[ l,         L         ]};
+    key <AD09> {[ c,         C         ]};
+    key <AD10> {[ w,         W         ]};
 
-    key <AC01> {[	i,	        I         ]};
-    key <AC02> {[	n,	        N         ]};
-    key <AC03> {[	e,	        E         ]};
-    key <AC04> {[	a,	        A         ]};
-    key <AC05> {[	comma,	    semicolon	]};
-    key <AC06> {[	m,	        M		      ]};
-    key <AC07> {[	h,	        H		      ]};
-    key <AC08> {[	t,	        T		      ]};
-    key <AC09> {[	s,	        S         ]};
-    key <AC10> {[ r,	        R		      ]};
+    key <AC01> {[ i,         I         ]};
+    key <AC02> {[ n,         N         ]};
+    key <AC03> {[ e,         E         ]};
+    key <AC04> {[ a,         A         ]};
+    key <AC05> {[ comma,     semicolon ]};
+    key <AC06> {[ m,         M         ]};
+    key <AC07> {[ h,         H         ]};
+    key <AC08> {[ t,         T         ]};
+    key <AC09> {[ s,         S         ]};
+    key <AC10> {[ r,         R         ]};
 
-    key <AB01> {[	q,	        Q 		    ]};
-    key <AB02> {[	z,	        Z		      ]};
-    key <AB03> {[	slash,	    less		  ]};
-    key <AB04> {[	period,	    greater		]};
-    key <AB05> {[	colon,	    question	]};
-    key <AB06> {[	b,	        B		      ]};
-    key <AB07> {[	f,	        F		      ]};
-    key <AB08> {[ g,	        G		      ]};
-    key <AB09> {[ v,	        V		      ]};
-    key <AB10> {[ x,	        X   	    ]};
+    key <AB01> {[ q,         Q         ]};
+    key <AB02> {[ z,         Z         ]};
+    key <AB03> {[ slash,     less      ]};
+    key <AB04> {[ period,    greater   ]};
+    key <AB05> {[ colon,     question  ]};
+    key <AB06> {[ b,         B         ]};
+    key <AB07> {[ f,         F         ]};
+    key <AB08> {[ g,         G         ]};
+    key <AB09> {[ v,         V         ]};
+    key <AB10> {[ x,         X         ]};
 };
+
 
 partial
 xkb_symbols "caps_bksp" {
@@ -51,16 +52,20 @@ xkb_symbols "caps_bksp" {
 
     include "mtgap_30"
 
-    key <CAPS> {[ BackSpace,  BackSpace ]};
+    name[Group1] = "MTGAP 30 (with CAPS as backspace)";
+
+    key <CAPS> {[ BackSpace, BackSpace, BackSpace, BackSpace ]};
 };
+
 
 partial alphanumeric_keys
 xkb_symbols "german" {
 
     // the standard layout with an AltGr layer for German umlauts
+
     include "mtgap_30"
 
-    name[Group1] = "MTGAP (30 keys with German umlauts)";
+    name[Group1] = "MTGAP 30 (with German umlauts)";
 
     key <AD03> {[ o, O, odiaeresis, Odiaeresis ]};
     key <AD04> {[ u, U, udiaeresis, Udiaeresis ]};
@@ -71,6 +76,7 @@ xkb_symbols "german" {
     include "level3(ralt_switch)"
 };
 
+
 partial
 xkb_symbols "german_caps_bksp" {
 
@@ -78,5 +84,7 @@ xkb_symbols "german_caps_bksp" {
 
     include "mtgap_30(german)"
 
-    key <CAPS> {[ BackSpace,  BackSpace ]};
+    name[Group1] = "MTGAP 30 (with German umlauts and CAPS as backspace)";
+
+    key <CAPS> {[ BackSpace, BackSpace, BackSpace, BackSpace ]};
 };
