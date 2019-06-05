@@ -1,5 +1,7 @@
-default
+default partial
 xkb_symbols "basic" {
+
+    include "us(basic)"
 
     name[Group1]= "MTGAP (30 keys)";
 
@@ -19,8 +21,8 @@ xkb_symbols "basic" {
 
     key <AD01> {[	y,	        Y 		        ]};
     key <AD02> {[	p,	        P		        ]};
-    key <AD03> {[	o,	        O		        ]};
-    key <AD04> {[	u,	        U		        ]};
+    key <AD03> {[	o,	        O, odiaeresis, Odiaeresis		        ]};
+    key <AD04> {[	u,	        U, udiaeresis, Udiaeresis		        ]};
     key <AD05> {[	j,	        J		        ]};
     key <AD06> {[	k,	        K		        ]};
     key <AD07> {[	d,	        D		        ]};
@@ -33,12 +35,12 @@ xkb_symbols "basic" {
     key <AC01> {[	i,	        I               ]};
     key <AC02> {[	n,	        N               ]};
     key <AC03> {[	e,	        E               ]};
-    key <AC04> {[	a,	        A               ]};
+    key <AC04> {[	a,	        A, adiaeresis, Adiaeresis               ]};
     key <AC05> {[	comma,	    semicolon	    ]};
     key <AC06> {[	m,	        M		        ]};
     key <AC07> {[	h,	        H		        ]};
     key <AC08> {[	t,	        T		        ]};
-    key <AC09> {[	s,	        S		        ]};
+    key <AC09> {[	s,	        S, ssharp, U1E9E		        ]};
     key <AC10> {[   r,	        R		        ]};
     key <AC11> {[   apostrophe,	quotedbl	    ]};
 
@@ -55,5 +57,7 @@ xkb_symbols "basic" {
 
     key <BKSL> {[   backslash,  bar	            ]};
     key <CAPS> {[   BackSpace,  BackSpace,  BackSpace,  BackSpace ]};
+
+    include "level3(ralt_switch)"
 };
 
