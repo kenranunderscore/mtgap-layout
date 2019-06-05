@@ -1,0 +1,48 @@
+<!-- Paste this into the <layoutList> section of
+     your evdev.xml to make the layout appear in GNOME
+     input sources under 'English (US)'.
+     Usually to find at: /usr/share/X11/xkb/rules/evdev.xml
+-->
+
+<layout>
+    <configItem>
+        <name>mtgap_30</name>
+        <shortDescription>mtgap</shortDescription>
+        <description>MTGAP 30</description>
+        <languageList>
+            <iso639Id>eng</iso639Id>
+        </languageList>
+    </configItem>
+    <variantList>
+        <variant>
+            <configItem>
+                <name>caps_bksp</name>
+                <shortDescription>mtgap</shortDescription>
+                <description>MTGAP 30 (with CAPS as backspace)</description>
+                <languageList>
+                    <iso639Id>eng</iso639Id>
+                </languageList>
+            </configItem>
+        </variant>
+        <variant>
+            <configItem>
+                <name>german</name>
+                <shortDescription>mtgap</shortDescription>
+                <description>MTGAP 30 (with German umlauts)</description>
+                <languageList>
+                    <iso639Id>eng</iso639Id>
+                </languageList>
+            </configItem>
+        </variant>
+        <variant>
+            <configItem>
+                <name>german_caps_bksp</name>
+                <shortDescription>mtgap</shortDescription>
+                <description>MTGAP 30 (with German umlauts and CAPS as backspace)</description>
+                <languageList>
+                    <iso639Id>eng</iso639Id>
+                </languageList>
+            </configItem>
+        </variant>
+    </variantList>
+</layout>
