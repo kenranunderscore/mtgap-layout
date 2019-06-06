@@ -26,7 +26,7 @@ If you use X, do
 
 To make the layout visible to GNOME, add the contents of `xkb/evdev_section.xml` to
 
-    /usr/share/X11/xkb/rules/evdev.xml`
+    /usr/share/X11/xkb/rules/evdev.xml
 
 The linux version contains the following variants:
 
