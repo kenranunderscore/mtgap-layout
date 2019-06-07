@@ -33,7 +33,7 @@ The linux version contains the following variants:
 - `basic`
 - `german` (`basic` plus German umlauts, `ß`, and `ẞ`)
 - `caps_bksp` (CAPS as backspace)
-- `german_caps_bksp` (`german` with CAPS as backspace**
+- `german_caps_bksp` (`german` with CAPS as backspace)
 
 I have gotten it to work on Wayland as well, but I don't specifically remember what I did to get there. IIRC it was similar to the above plus basically telling Wayland to be xkb compatible.
 
