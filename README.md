@@ -12,7 +12,7 @@ Having tried different keyboard layouts lately, namely
 I kept looking for alternatives and reading in a couple of forums.
 
 One layout that managed to do well, or rather, stand out, in all the different keyboard layout analyzers I tried is the [latest version of MTGAP's layout](https://mathematicalmulticore.wordpress.com/the-keyboard-layout-project/).
-I am currently learning the version that optimizes the 30 main keys on a standard (ISO or ANSI) keyboard, and so far I'm very impressed. It is a very roll-heavy layout with a good amout of alternation and feels extremely smooth overall.
+I am currently using the version that optimizes the 30 main keys on a standard (ISO or ANSI) keyboard, and I'm very impressed. It is a roll-heavy layout with a good amount of alternation and feels extremely smooth overall.
 
 Since I am currently using macOS, Windows 10, Arch Linux and Debian simultaneously, I implemented the 30-key version of MTGAP for those systems.
 
@@ -27,6 +27,8 @@ If you use X, do
 To make the layout visible to GNOME, add the contents of `xkb/evdev_section.xml` to
 
     /usr/share/X11/xkb/rules/evdev.xml
+
+(But be aware that system updates can overwrite `evdev.xml`. Then you have to manually insert the section again.)
 
 The linux version contains the following variants:
 
@@ -43,4 +45,4 @@ The macOS version of MTGAP was created with *Ukelele*, which can also be used to
 
 ### Windows
 
-The layout was created using the ancient [Microsoft Keyboard Layout Creator](https://www.microsoft.com/en-us/download/details.aspx?id=22339). It is able to create an installer/uninstaller executable from the `*.klc*` files inside the `win` directory (30-key and fully optimized versions).
+The layout was created using the ancient [Microsoft Keyboard Layout Creator](https://www.microsoft.com/en-us/download/details.aspx?id=22339). It is able to create an installer/uninstaller executable from the `*.klc` files inside the `win` directory (30-key and fully optimized versions).
