@@ -11,12 +11,21 @@ Having tried different keyboard layouts lately, namely
 
 I kept looking for alternatives and reading in a couple of forums.
 
-One layout that managed to do well, or rather, stand out, in all the different keyboard layout analyzers I tried is the [latest version of MTGAP's layout](https://mathematicalmulticore.wordpress.com/the-keyboard-layout-project/).
+One layout that managed to do well, or rather, stand out, in all the different keyboard layout analyzers I tried is the [latest version of MTGAP's layout](https://mathematicalmulticore.wordpress.com/the-keyboard-layout-project/). 
 I am currently using the version that optimizes the 30 main keys on a standard (ISO or ANSI) keyboard, and I'm very impressed. It is a roll-heavy layout with a good amount of alternation and feels extremely smooth overall.
 
-Since I am currently using macOS, Windows 10, Arch Linux and Debian simultaneously, I implemented the 30-key version of MTGAP for those systems.
+I am, however, **not** its creator (whose nickname happens to be MTGAP).
+
+Since I am jumping between operating systems a lot, I implemented the 30-key version of MTGAP for the most common ones.
+
+Nowadays, I'm mainly typing on ergo split keyboards which use the [Quantum Mechanical Keyboard (QMK) firmware](https://docs.qmk.fm/#/).
+This way, I can program the layout "into" the keyboard which enables me to use the layout everywhere without having to install software first (but I have to carry the keyboard with me, of course :D).
 
 ## Installation
+
+### QMK
+
+In case you're interested, check out the [QMK configuration](https://github.com/kenranunderscore/qmk_firmware/tree/kenran/users/kenranunderscore) that is used across all my keyboards.
 
 ### Linux
 
