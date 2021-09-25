@@ -4,7 +4,7 @@ xkb_keymap {
     xkb_compat    { include "complete"	};
     partial alphanumeric_keys
     xkb_symbols "mtgap" {
-        include "pc+us(altgr-intl)+inet(evdev)"
+        include "pc+us(basic)+inet(evdev)"
         name[Group1] = "MTGAP 30 with German umlauts";
 
         key <AD01> {[ y,         Y         ]};
@@ -35,12 +35,14 @@ xkb_keymap {
         key <AB04> {[ period,    greater   ]};
         key <AB05> {[ semicolon, colon     ]};
         key <AB06> {[ b,         B         ]};
-        key <AB07> {[ f,         F         ]};
-        key <AB08> {[ g,         G         ]};
-        key <AB09> {[ v,         V         ]};
-        key <AB10> {[ x,         X         ]};
+        key <AB07> {[ f,         F         , adiaeresis, Adiaeresis ]};
+        key <AB08> {[ g,         G         , odiaeresis, Odiaeresis ]};
+        key <AB09> {[ v,         V         , udiaeresis, Udiaeresis ]};
+        key <AB10> {[ x,         X         , ssharp ]};
 
         key <CAPS> {[ BackSpace, BackSpace, BackSpace, BackSpace ]};
+
+        include "level3(ralt_switch)"
     };
     xkb_geometry  { include "pc(pc104)"	};
 };
