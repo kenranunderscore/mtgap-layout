@@ -42,6 +42,23 @@ that is used across all my keyboards.
 
 ### Linux
 
+#### Using `xkbcomp`
+
+With
+[xkbcomp](https://www.x.org/releases/X11R7.5/doc/man/man1/xkbcomp.1.html)
+it's easy to specify a "delta" to an existing layout and immediately
+use it like this:
+
+```shell
+xkbcomp ./xkb/mtgap.xkb $DISPLAY
+```
+
+So far I've only built the 30-key version of MTGAP with some German
+umlauts and CAPS as backspace, but it should be straightforward to
+adapt the file to your needs.
+
+#### Manual installation
+
 If you use X, do
 
     sudo cp xkb/mtgap_30 /usr/share/X11/xkb/symbols/
